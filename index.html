@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Akhtar | Financial Analyst | FP&A, Corporate Valuation & Behavioral Finance</title>
+  <meta name="description" content="Professional portfolio of Sahil Akhtar, Financial Analyst specializing in FP&A, Corporate Valuation, and Behavioral Finance with 3+ years experience in AP, AR, General Accounting, and dual Master's degrees in Business Finance and Counseling Psychology." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS v3 via Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            navy: {
+              950: '#070D18',
+              900: '#0B1528',
+              850: '#0F1D36',
+              800: '#15274A',
+              700: '#1E3A6E',
+              600: '#284F94',
+            },
+            gold: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+              700: '#B45309',
+            },
+            emerald: {
+              400: '#34D399',
+              500: '#10B981',
+              600: '#059669',
+            }
+          },
+          boxShadow: {
+            'glow-gold': '0 0 25px -5px rgba(245, 158, 11, 0.25)',
+            'glow-emerald': '0 0 25px -5px rgba(16, 185, 129, 0.25)',
+            'glass': '0 8px 32px 0 rgba(11, 21, 40, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles for UI Enhancements -->
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B1528;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E3A6E;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D97706;
+    }
+
+    /* Range Slider Styling */
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: transparent;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #F59E0B;
+      cursor: pointer;
+      margin-top: -7px;
+      box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: #284F94;
+      border-radius: 3px;
+    }
+
+    /* Subtle Animated Gradients */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+    }
+    .animate-pulse-glow {
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-navy-950 dark:text-slate-100 transition-colors duration-300 antialiased selection:bg-gold-500 selection:text-navy-950">
+
+  <!-- =========================================================================
+       TOP NAVIGATION BAR (Sticky Glassmorphic Header)
+       ========================================================================= -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 dark:bg-navy-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand / Monogram -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-navy-800 to-navy-950 dark:from-gold-500 dark:to-gold-600 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200">
+            <span class="font-display font-bold text-lg text-white dark:text-navy-950">SA</span>
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg tracking-tight text-navy-900 dark:text-white flex items-center gap-1.5">
+              Sahil Akhtar <span class="text-xs px-2 py-0.5 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 font-mono font-medium">FP&A</span>
+            </div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 font-medium tracking-wide">
+              Corporate Valuation & Behavioral Finance
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+          <a href="#about" class="nav-link px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-navy-900 dark:hover:text-gold-400 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition-all">
+            About
+          </a>
+          <a href="#projects" class="nav-link px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-navy-900 dark:hover:text-gold-400 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition-all flex items-center gap-1.5">
+            <span>Projects</span>
+            <span class="w-2 h-2 rounded-full bg-gold-500 animate-ping"></span>
+          </a>
+          <a href="#competencies" class="nav-link px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-navy-900 dark:hover:text-gold-400 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition-all">
+            Competencies
+          </a>
+          <a href="#contact" class="nav-link px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-navy-900 dark:hover:text-gold-400 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition-all">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Right Controls: Theme Switcher & CTA -->
+        <div class="flex items-center gap-3">
+          <!-- Light / Dark Mode Toggle Button -->
+          <button id="themeToggleBtn" aria-label="Toggle dark mode" class="p-2.5 rounded-xl border border-slate-200 dark:border-navy-800 bg-slate-100/80 dark:bg-navy-800/80 text-slate-700 dark:text-gold-400 hover:bg-slate-200 dark:hover:bg-navy-700 transition-colors">
+            <!-- Sun Icon (shown in dark mode) -->
+            <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            <!-- Moon Icon (shown in light mode) -->
+            <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+          </button>
+
+          <!-- Primary Header Action Button -->
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 font-semibold text-sm shadow-md hover:bg-navy-800 dark:hover:bg-gold-400 hover:shadow-lg transition-all duration-200">
+            <span>Schedule Consultation</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobileMenuBtn" aria-label="Open mobile menu" class="md:hidden p-2.5 rounded-xl border border-slate-200 dark:border-navy-800 bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 px-4 pt-3 pb-6 space-y-2">
+      <a href="#about" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-navy-800">About</a>
+      <a href="#projects" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-navy-800">Projects</a>
+      <a href="#competencies" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-navy-800">Competencies</a>
+      <a href="#contact" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-navy-800">Contact</a>
+      <div class="pt-2">
+        <a href="#contact" class="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 font-semibold text-sm">
+          <span>Schedule Consultation</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       LIVE FINANCIAL METRICS / MARKET TICKER BAR
+       ========================================================================= -->
+  <div class="pt-20 bg-navy-900 dark:bg-navy-950 border-b border-navy-800 text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between text-xs font-mono">
+      <div class="flex items-center gap-2 text-gold-400">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-semibold tracking-wider uppercase">FP&A Executive Index</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-8 text-slate-300">
+        <span class="flex items-center gap-1.5">
+          <span class="text-slate-400">AP/AR EXPERTISE:</span>
+          <span class="text-emerald-400 font-bold">3+ Years Core Accounting</span>
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="text-slate-400">DSO REDUCTION:</span>
+          <span class="text-emerald-400 font-bold">-24 Days Avg</span>
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="text-slate-400">VALUATION CAPABILITY:</span>
+          <span class="text-gold-400 font-bold">DCF / LBO / M&A</span>
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="text-slate-400">ACADEMIC EDGE:</span>
+          <span class="text-white font-bold">Dual M.S. (Finance + Psych)</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION
+         ========================================================================= -->
+    <section id="hero" class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-100/50 via-white to-slate-50 dark:from-navy-950 dark:via-navy-900/60 dark:to-navy-950">
+      
+      <!-- Background Ambient Grid & Glows -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none"></div>
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gold-500/10 dark:bg-gold-500/15 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
+      <div class="absolute top-1/3 right-10 w-[400px] h-[300px] bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Headline & Value Proposition -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Credibility Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-navy-900/5 dark:bg-gold-500/10 border border-navy-900/10 dark:border-gold-500/20 text-navy-900 dark:text-gold-400 text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
+              <i data-lucide="shield-check" class="w-4 h-4 text-gold-500"></i>
+              <span>Financial Analyst & Behavioral Capital Specialist</span>
+            </div>
+
+            <!-- Sahil Akhtar Name -->
+            <div class="space-y-2">
+              <span class="text-sm font-mono uppercase tracking-widest text-slate-500 dark:text-slate-400">Executive Financial Portfolio</span>
+              <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-navy-900 dark:text-white">
+                Sahil <span class="bg-gradient-to-r from-navy-700 via-gold-600 to-gold-500 dark:from-gold-400 dark:to-gold-500 bg-clip-text text-transparent">Akhtar</span>
+              </h1>
+            </div>
+
+            <!-- PRIMARY HEADLINE (EXACT REQUESTED HEADLINE) -->
+            <div class="p-4 sm:p-6 rounded-2xl bg-white/80 dark:bg-navy-900/90 border border-slate-200 dark:border-navy-800 shadow-xl backdrop-blur-sm">
+              <h2 class="font-display font-bold text-xl sm:text-2xl lg:text-3xl leading-snug text-navy-900 dark:text-slate-100">
+                Financial Analyst | <span class="text-gold-600 dark:text-gold-400">FP&A, Corporate Valuation</span> & <span class="text-emerald-600 dark:text-emerald-400">Behavioral Finance</span>
+              </h2>
+            </div>
+
+            <!-- Executive Subtext -->
+            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+              Bridging rigorous rigorous corporate accounting discipline—with <strong class="text-navy-900 dark:text-white font-semibold">3+ years in Accounts Payable, Accounts Receivable & General Accounting</strong>—and sophisticated quantitative valuation, empowered by <strong class="text-gold-600 dark:text-gold-400 font-semibold">Dual Master’s Degrees in Business Finance & Counseling Psychology</strong>.
+            </p>
+
+            <!-- High-Impact Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+              <a href="#projects" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 font-bold text-base shadow-lg hover:bg-navy-800 dark:hover:bg-gold-400 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
+                <span>Explore Financial Projects</span>
+                <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+              </a>
+              <a href="#about" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl bg-white dark:bg-navy-900 border border-slate-300 dark:border-navy-700 text-navy-900 dark:text-slate-200 font-semibold text-base shadow-sm hover:bg-slate-100 dark:hover:bg-navy-800 hover:-translate-y-0.5 transition-all duration-200">
+                <span>Executive Experience</span>
+                <i data-lucide="arrow-down" class="w-5 h-5"></i>
+              </a>
+              <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-navy-800 dark:text-gold-400 font-semibold text-sm hover:underline">
+                <span>Contact Sahil</span>
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+            <!-- Quick Snapshot KPI Strip -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-slate-200 dark:border-navy-800">
+              <div class="p-3 sm:p-4 rounded-xl bg-white/60 dark:bg-navy-900/60 border border-slate-200/80 dark:border-navy-800 text-center lg:text-left">
+                <div class="font-display font-extrabold text-2xl sm:text-3xl text-navy-900 dark:text-white">3+ Years</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">AP / AR / GL Experience</div>
+              </div>
+              <div class="p-3 sm:p-4 rounded-xl bg-white/60 dark:bg-navy-900/60 border border-slate-200/80 dark:border-navy-800 text-center lg:text-left">
+                <div class="font-display font-extrabold text-2xl sm:text-3xl text-gold-600 dark:text-gold-400">Dual M.S.</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Finance & Psychology</div>
+              </div>
+              <div class="p-3 sm:p-4 rounded-xl bg-white/60 dark:bg-navy-900/60 border border-slate-200/80 dark:border-navy-800 text-center lg:text-left">
+                <div class="font-display font-extrabold text-2xl sm:text-3xl text-emerald-600 dark:text-emerald-400">99.4%</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">FP&A Forecast Accuracy</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Executive Portrait Card with Floating Badges -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            
+            <!-- Ambient Glow Behind Portrait -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-navy-800 to-gold-500/20 rounded-3xl blur-2xl transform rotate-3 scale-95 opacity-60"></div>
+
+            <!-- Portrait Glass Card -->
+            <div class="relative w-full max-w-md rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 p-3 shadow-2xl overflow-hidden">
+              <div class="relative rounded-2xl overflow-hidden bg-navy-950 aspect-[4/5]">
+                <img src="assets/sahil_akhtar_portrait.png" alt="Sahil Akhtar - Financial Analyst" class="w-full h-full object-cover object-top" />
+                
+                <!-- Bottom Dark Gradient Overlay inside Portrait -->
+                <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-navy-950 via-navy-950/70 to-transparent flex flex-col justify-end p-6">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h3 class="font-display font-bold text-xl text-white">Sahil Akhtar, M.S., M.S.</h3>
+                      <p class="text-xs text-gold-400 font-mono">Senior FP&A & Valuation Specialist</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-semibold flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                      Available
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Floating KPI Badge Top Right -->
+                <div class="absolute top-4 right-4 bg-white/90 dark:bg-navy-900/90 backdrop-blur-md border border-slate-200 dark:border-navy-700 rounded-xl p-3 shadow-lg max-w-[200px]">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                      <i data-lucide="trending-up" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                      <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-mono">Working Capital</div>
+                      <div class="text-xs font-bold text-navy-900 dark:text-white">+18.4% Efficiency</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating Badge Top Left -->
+                <div class="absolute top-4 left-4 bg-white/90 dark:bg-navy-900/90 backdrop-blur-md border border-slate-200 dark:border-navy-700 rounded-xl p-3 shadow-lg">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                      <i data-lucide="brain-circuit" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                      <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-mono">Behavioral Edge</div>
+                      <div class="text-xs font-bold text-navy-900 dark:text-white">Bias Mitigation</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ABOUT SECTION: PROFESSIONAL EXPERIENCE & DUAL MASTER'S DEGREES
+         ========================================================================= -->
+    <section id="about" class="py-20 lg:py-28 bg-white dark:bg-navy-950 border-y border-slate-200/80 dark:border-navy-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-navy-900/10 dark:bg-gold-500/10 text-navy-900 dark:text-gold-400">
+            About Sahil Akhtar
+          </span>
+          <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-navy-900 dark:text-white">
+            Comprehensive Operational Expertise & Multidisciplinary Academic Depth
+          </h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+            Sahil Akhtar brings over three years of hands-on professional accounting experience grounded in rigorous transaction cycles, paired with an extraordinary dual graduate academic pedigree that elevates strategic financial leadership.
+          </p>
+        </div>
+
+        <!-- TWO PILLAR GRID: Professional Experience vs Dual Academic Degrees -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          
+          <!-- LEFT: Over 3 Years Professional Accounting & Finance Experience (7 cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-200 dark:border-navy-800 pb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 flex items-center justify-center font-bold">
+                  <i data-lucide="briefcase" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-2xl text-navy-900 dark:text-white">3+ Years Professional Foundation</h3>
+                  <p class="text-xs font-mono text-slate-500 dark:text-slate-400">Core Corporate Accounting & Operational Finance</p>
+                </div>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold font-mono">
+                Verified Track Record
+              </span>
+            </div>
+
+            <!-- AP Card -->
+            <div class="p-6 rounded-2xl bg-slate-50 dark:bg-navy-900/70 border border-slate-200 dark:border-navy-800 hover:border-gold-500/50 transition-all duration-300 shadow-sm">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="p-3 rounded-xl bg-white dark:bg-navy-800 text-navy-800 dark:text-gold-400 shadow-sm">
+                    <i data-lucide="credit-card" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-display font-bold text-lg text-navy-900 dark:text-white">Accounts Payable (AP) Optimization</h4>
+                    <span class="text-xs font-mono text-gold-600 dark:text-gold-400">Disbursements | Cash Cycle Control | Vendor Strategy</span>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                Managed full-cycle accounts payable for high-volume corporate operations, implementing automated 3-way PO matching, invoice audit controls, and strategic vendor terms negotiation to capture early payment discounts and optimize working capital cash outflows.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">3-Way Matching</span>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">Cash Outflow Forecasting</span>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">Vendor Reconciliation</span>
+              </div>
+            </div>
+
+            <!-- AR Card -->
+            <div class="p-6 rounded-2xl bg-slate-50 dark:bg-navy-900/70 border border-slate-200 dark:border-navy-800 hover:border-gold-500/50 transition-all duration-300 shadow-sm">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="p-3 rounded-xl bg-white dark:bg-navy-800 text-navy-800 dark:text-gold-400 shadow-sm">
+                    <i data-lucide="dollar-sign" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-display font-bold text-lg text-navy-900 dark:text-white">Accounts Receivable (AR) & Credit Risk</h4>
+                    <span class="text-xs font-mono text-emerald-600 dark:text-emerald-400">DSO Reduction | Collections Strategy | Credit Scoring</span>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                Directed enterprise credit risk evaluation and receivables aging management. Significantly shortened Days Sales Outstanding (DSO) through proactive customer risk stratification, automated billing workflows, and structured behavioral collection incentives.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">Aging Analysis</span>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">DSO Reduction</span>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">Bad Debt Provisioning</span>
+              </div>
+            </div>
+
+            <!-- General Accounting Card -->
+            <div class="p-6 rounded-2xl bg-slate-50 dark:bg-navy-900/70 border border-slate-200 dark:border-navy-800 hover:border-gold-500/50 transition-all duration-300 shadow-sm">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="p-3 rounded-xl bg-white dark:bg-navy-800 text-navy-800 dark:text-gold-400 shadow-sm">
+                    <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-display font-bold text-lg text-navy-900 dark:text-white">General Accounting & Financial Reporting</h4>
+                    <span class="text-xs font-mono text-navy-600 dark:text-slate-400">Month-End Close | GL Reconciliation | GAAP Compliance</span>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                Spearheaded general ledger reconciliations, journal entry reviews, accrual accounting, and month-end/year-end closing cycles. Prepared accurate trial balances and executive financial statements under rigorous US GAAP compliance standards.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">GL Reconciliations</span>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">Fast Month-End Close</span>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 font-medium">US GAAP Compliance</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Supported by Dual Master's Degrees (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-200 dark:border-navy-800 pb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-500 text-navy-950 flex items-center justify-center font-bold">
+                  <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-2xl text-navy-900 dark:text-white">Dual Master's Degrees</h3>
+                  <p class="text-xs font-mono text-slate-500 dark:text-slate-400">Multidisciplinary Graduate Distinction</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Degree 1: M.S. Business Finance -->
+            <div class="p-6 rounded-2xl bg-gradient-to-br from-navy-900 to-navy-950 text-white border border-navy-800 shadow-xl relative overflow-hidden">
+              <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-gold-500/10 rounded-full blur-2xl"></div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs px-3 py-1 rounded-full bg-gold-500 text-navy-950 font-bold font-mono">
+                  DEGREE I : BUSINESS FINANCE
+                </span>
+                <i data-lucide="trending-up" class="w-5 h-5 text-gold-400"></i>
+              </div>
+              <h4 class="font-display font-bold text-xl text-white">Master’s Degree in Business Finance</h4>
+              <p class="mt-1 text-xs text-gold-400 font-mono">Quantitative Valuation | Capital Budgeting | Financial Econometrics</p>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Advanced graduate specialization in corporate finance, discounted cash flow (DCF) modeling, leveraged buyouts (LBO), capital structure optimization, cost of capital calculation (WACC), and strategic merger & acquisition valuation.
+              </p>
+              <div class="mt-4 pt-4 border-t border-navy-800/80 flex items-center justify-between text-xs text-slate-400">
+                <span>Core Focus: FP&A & Valuation</span>
+                <span class="text-gold-400 font-semibold">Distinction Level</span>
+              </div>
+            </div>
+
+            <!-- Degree 2: M.S. Counseling Psychology -->
+            <div class="p-6 rounded-2xl bg-gradient-to-br from-navy-900 to-navy-950 text-white border border-navy-800 shadow-xl relative overflow-hidden">
+              <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl"></div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs px-3 py-1 rounded-full bg-emerald-500 text-navy-950 font-bold font-mono">
+                  DEGREE II : PSYCHOLOGY & BEHAVIOR
+                </span>
+                <i data-lucide="users" class="w-5 h-5 text-emerald-400"></i>
+              </div>
+              <h4 class="font-display font-bold text-xl text-white">Master’s Degree in Counseling Psychology</h4>
+              <p class="mt-1 text-xs text-emerald-400 font-mono">Behavioral Economics | Cognitive Bias Audit | C-Suite Negotiation</p>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Provides a rare, transformative advantage in <strong class="text-white">Behavioral Finance</strong>: diagnosing managerial optimism bias in capital forecasting, mitigating anchoring and sunk-cost fallacies during capital committee decisions, and mastering empathetic negotiation with executives and boards.
+              </p>
+              <div class="mt-4 pt-4 border-t border-navy-800/80 flex items-center justify-between text-xs text-slate-400">
+                <span>Core Focus: Behavioral Decision Science</span>
+                <span class="text-emerald-400 font-semibold">Unique Competitive Advantage</span>
+              </div>
+            </div>
+
+            <!-- Synergy Callout Box -->
+            <div class="p-5 rounded-2xl bg-gold-500/10 border border-gold-500/30 text-navy-900 dark:text-slate-200">
+              <div class="flex items-start gap-3">
+                <i data-lucide="sparkles" class="w-6 h-6 text-gold-500 shrink-0 mt-0.5"></i>
+                <div>
+                  <h5 class="font-display font-bold text-sm text-navy-900 dark:text-white">Why This Dual Background Matters</h5>
+                  <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">
+                    "Numbers tell what happened; psychology explains why decisions were made. Combining quantitative finance with behavioral counseling enables more realistic forecasts and higher-impact stakeholder buy-in."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PROJECTS SECTION: RECRUITER-TAILORED FINANCE & LOGISTICS CASE STUDIES
+         ========================================================================= -->
+    <section id="projects" class="py-20 lg:py-28 bg-slate-100/70 dark:bg-navy-900/40 border-b border-slate-200/80 dark:border-navy-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <span class="text-xs font-mono font-semibold uppercase tracking-widest px-3.5 py-1.5 rounded-full bg-navy-900/10 dark:bg-gold-500/15 text-navy-900 dark:text-gold-400 border border-navy-900/10 dark:border-gold-500/20">
+              Executive Portfolio Showcase
+            </span>
+            <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-navy-900 dark:text-white tracking-tight">
+              Featured Systems, Valuation & Logistics Applications
+            </h2>
+          </div>
+          <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base max-w-lg leading-relaxed">
+            Engineered at the intersection of full-stack software architecture (<strong class="text-navy-900 dark:text-white font-semibold">TypeScript, Next.js, Python</strong>), quantitative corporate finance, and behavioral systems modeling.
+          </p>
+        </div>
+
+        <!-- THREE DETAILED PROJECT CARDS GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          
+          <!-- =================================================================
+               CARD 1: PRICE GUARD (AP VARIANCE & INVOICE AUTOMATION)
+               ================================================================= -->
+          <div class="flex flex-col justify-between rounded-3xl bg-white dark:bg-navy-900 border border-slate-200/90 dark:border-navy-800 p-7 sm:p-8 shadow-xl hover:shadow-2xl hover:border-gold-500/40 transition-all duration-300 group relative overflow-hidden">
+            <!-- Top Subtle Gradient Glow -->
+            <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-navy-800 via-gold-500 to-emerald-500"></div>
+
+            <div class="space-y-6">
+              <!-- Header Badges -->
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-navy-900/10 dark:bg-gold-500/15 text-navy-900 dark:text-gold-400 text-xs font-mono font-bold tracking-wide border border-navy-900/10 dark:border-gold-500/20">
+                  FINTECH • AP AUTOMATION
+                </span>
+                <span class="flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  Live Variance Audit
+                </span>
+              </div>
+
+              <!-- Title & Subtitle -->
+              <div>
+                <h3 class="font-display font-extrabold text-2xl text-navy-900 dark:text-white group-hover:text-gold-500 transition-colors">
+                  Price Guard
+                </h3>
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400 mt-1">
+                  Automated AP Invoice Variance & Credit Memo Platform
+                </p>
+              </div>
+
+              <!-- Recruiter Executive Description -->
+              <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                A high-performance <strong class="text-navy-900 dark:text-white font-semibold">TypeScript and Next.js</strong> application automating enterprise invoice variance detection against PO terms and master pricing contracts. Eliminates AP cash leakage by continuously auditing line-item unit prices, freight surcharges, and unapplied rebates, orchestrating automated credit memo recovery workflows.
+              </p>
+
+              <!-- Recruiter Quantitative Highlights Box -->
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 space-y-3 font-mono text-xs">
+                <div class="flex items-center justify-between border-b border-slate-200/80 dark:border-navy-800 pb-2">
+                  <span class="text-slate-500 dark:text-slate-400">AP LEAKAGE PREVENTED</span>
+                  <span class="font-bold text-emerald-600 dark:text-emerald-400">$142,500 / Yr Audited</span>
+                </div>
+                <div class="flex items-center justify-between border-b border-slate-200/80 dark:border-navy-800 pb-2">
+                  <span class="text-slate-500 dark:text-slate-400">3-WAY PO MATCH RATE</span>
+                  <span class="font-bold text-navy-900 dark:text-white">99.8% Automated Line-Item</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-500 dark:text-slate-400">CREDIT MEMO CYCLE</span>
+                  <span class="font-bold text-gold-600 dark:text-gold-400">2.4 Days (-74% DSO Impact)</span>
+                </div>
+              </div>
+
+              <!-- Key Architecture Bullet Points -->
+              <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                  <span>Automated line-item tolerance thresholds & flag alerts</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                  <span>End-to-end credit memo generation & vendor dispute tracking</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tech Stack & Action Strip -->
+            <div class="mt-8 pt-5 border-t border-slate-200 dark:border-navy-800 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">TypeScript</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">Next.js</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">AP Leakage Engine</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">Credit Workflows</span>
+              </div>
+              <div class="flex items-center justify-between text-xs font-semibold">
+                <span class="text-slate-400 font-mono">FINANCE AUTOMATION</span>
+                <a href="#contact" class="inline-flex items-center gap-1 text-navy-900 dark:text-gold-400 hover:underline">
+                  <span>Recruiter Briefing</span>
+                  <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+
+              <!-- Two UI Buttons Side-by-Side: Live Demo & Source Code -->
+              <div class="grid grid-cols-2 gap-3 pt-2">
+                <a href="#" aria-label="Live Demo for Price Guard" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 font-semibold text-xs shadow-sm hover:bg-navy-800 dark:hover:bg-gold-400 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all duration-200">
+                  <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" aria-label="Source Code for Price Guard" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl border-2 border-slate-300 dark:border-navy-700 text-navy-900 dark:text-slate-200 font-semibold text-xs hover:border-navy-900 dark:hover:border-gold-400 hover:text-navy-900 dark:hover:text-gold-400 hover:bg-slate-100 dark:hover:bg-navy-800/50 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all duration-200">
+                  <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- =================================================================
+               CARD 2: DCF VALUATION MODEL (PYTHON & STREAMLIT DASHBOARD)
+               ================================================================= -->
+          <div class="flex flex-col justify-between rounded-3xl bg-white dark:bg-navy-900 border border-slate-200/90 dark:border-navy-800 p-7 sm:p-8 shadow-xl hover:shadow-2xl hover:border-gold-500/40 transition-all duration-300 group relative overflow-hidden">
+            <!-- Top Subtle Gradient Glow -->
+            <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-gold-500 via-emerald-500 to-navy-800"></div>
+
+            <div class="space-y-6">
+              <!-- Header Badges -->
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-700 dark:text-gold-400 text-xs font-mono font-bold tracking-wide border border-gold-500/30">
+                  CORPORATE VALUATION • BI
+                </span>
+                <span class="flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                  <span class="w-2 h-2 rounded-full bg-gold-500 animate-ping"></span>
+                  Multi-Year Model
+                </span>
+              </div>
+
+              <!-- Title & Subtitle -->
+              <div>
+                <h3 class="font-display font-extrabold text-2xl text-navy-900 dark:text-white group-hover:text-gold-500 transition-colors">
+                  DCF Valuation Model
+                </h3>
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400 mt-1">
+                  Python & Streamlit WACC & Projection Dashboard
+                </p>
+              </div>
+
+              <!-- Recruiter Executive Description -->
+              <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                A quantitative <strong class="text-navy-900 dark:text-white font-semibold">Python and Streamlit</strong> dashboard executing institutional multi-year corporate financial projections. Integrates automated Cost of Capital (WACC) calculations using CAPM risk-free rate, equity risk premium, and levered/unlevered peer betas with dynamic terminal perpetuity matrices.
+              </p>
+
+              <!-- Recruiter Quantitative Highlights Box -->
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 space-y-3 font-mono text-xs">
+                <div class="flex items-center justify-between border-b border-slate-200/80 dark:border-navy-800 pb-2">
+                  <span class="text-slate-500 dark:text-slate-400">AUTOMATED WACC ENGINE</span>
+                  <span class="font-bold text-gold-600 dark:text-gold-400">CAPM & Peer Beta Sensitivity</span>
+                </div>
+                <div class="flex items-center justify-between border-b border-slate-200/80 dark:border-navy-800 pb-2">
+                  <span class="text-slate-500 dark:text-slate-400">MODEL TIMEFRAME</span>
+                  <span class="font-bold text-navy-900 dark:text-white">5 to 10-Yr 3-Statement Forecast</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-500 dark:text-slate-400">VALUATION RANGE</span>
+                  <span class="font-bold text-emerald-600 dark:text-emerald-400">Terminal Growth & Exit Multiple</span>
+                </div>
+              </div>
+
+              <!-- Key Architecture Bullet Points -->
+              <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-500 shrink-0 mt-0.5"></i>
+                  <span>Automated Unlevered Free Cash Flow (UFCF) bridges</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-500 shrink-0 mt-0.5"></i>
+                  <span>Scenario modeling (Base, Bull, Bear) with interactive sensitivity grids</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tech Stack & Action Strip -->
+            <div class="mt-8 pt-5 border-t border-slate-200 dark:border-navy-800 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">Python</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">Streamlit</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">Pandas / NumPy</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">WACC Automation</span>
+              </div>
+              <div class="flex items-center justify-between text-xs font-semibold">
+                <span class="text-slate-400 font-mono">QUANTITATIVE VALUATION</span>
+                <a href="#dcf-interactive" class="inline-flex items-center gap-1 text-navy-900 dark:text-gold-400 hover:underline">
+                  <span>Interactive Simulator Below</span>
+                  <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+
+              <!-- Two UI Buttons Side-by-Side: Live Demo & Source Code -->
+              <div class="grid grid-cols-2 gap-3 pt-2">
+                <a href="#" aria-label="Live Demo for DCF Valuation Model" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 font-semibold text-xs shadow-sm hover:bg-navy-800 dark:hover:bg-gold-400 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all duration-200">
+                  <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" aria-label="Source Code for DCF Valuation Model" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl border-2 border-slate-300 dark:border-navy-700 text-navy-900 dark:text-slate-200 font-semibold text-xs hover:border-navy-900 dark:hover:border-gold-400 hover:text-navy-900 dark:hover:text-gold-400 hover:bg-slate-100 dark:hover:bg-navy-800/50 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all duration-200">
+                  <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- =================================================================
+               CARD 3: RELIEFOPS (EDUCATIONAL LOGISTICS & BEHAVIORAL SIMULATION)
+               ================================================================= -->
+          <div class="flex flex-col justify-between rounded-3xl bg-white dark:bg-navy-900 border border-slate-200/90 dark:border-navy-800 p-7 sm:p-8 shadow-xl hover:shadow-2xl hover:border-gold-500/40 transition-all duration-300 group relative overflow-hidden">
+            <!-- Top Subtle Gradient Glow -->
+            <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-emerald-500 via-navy-800 to-gold-500"></div>
+
+            <div class="space-y-6">
+              <!-- Header Badges -->
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 text-xs font-mono font-bold tracking-wide border border-emerald-500/20">
+                  LOGISTICS • BEHAVIORAL SYSTEMS
+                </span>
+                <span class="flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  Simulation Engine
+                </span>
+              </div>
+
+              <!-- Title & Subtitle -->
+              <div>
+                <h3 class="font-display font-extrabold text-2xl text-navy-900 dark:text-white group-hover:text-gold-500 transition-colors">
+                  ReliefOps
+                </h3>
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400 mt-1">
+                  Logistics & Population State Architecture Simulation
+                </p>
+              </div>
+
+              <!-- Recruiter Executive Description -->
+              <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                An advanced educational logistics simulation tracking dynamic <strong class="text-navy-900 dark:text-white font-semibold">population state architectures and supply chain resource allocation</strong> across complex crisis networks. Combines quantitative resource optimization with <strong class="text-emerald-600 dark:text-emerald-400 font-semibold">behavioral psychology decision theory</strong> to model under-pressure triage and resource distribution efficiency.
+              </p>
+
+              <!-- Recruiter Quantitative Highlights Box -->
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 space-y-3 font-mono text-xs">
+                <div class="flex items-center justify-between border-b border-slate-200/80 dark:border-navy-800 pb-2">
+                  <span class="text-slate-500 dark:text-slate-400">POPULATION STATE INDEX</span>
+                  <span class="font-bold text-emerald-600 dark:text-emerald-400">Real-Time Architecture Health</span>
+                </div>
+                <div class="flex items-center justify-between border-b border-slate-200/80 dark:border-navy-800 pb-2">
+                  <span class="text-slate-500 dark:text-slate-400">RESOURCE ALLOCATION</span>
+                  <span class="font-bold text-navy-900 dark:text-white">Multi-Node Supply Routing</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-500 dark:text-slate-400">BEHAVIORAL EDGE</span>
+                  <span class="font-bold text-gold-600 dark:text-gold-400">Crisis Decision Modeling</span>
+                </div>
+              </div>
+
+              <!-- Key Architecture Bullet Points -->
+              <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                  <span>Simulates inventory burn rates & supply chain bottleneck triage</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                  <span>Applies counseling psychology frameworks to organizational decision pressure</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tech Stack & Action Strip -->
+            <div class="mt-8 pt-5 border-t border-slate-200 dark:border-navy-800 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">TypeScript</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">Supply Chain Modeling</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">State Architecture</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-mono font-medium">Behavioral Analytics</span>
+              </div>
+              <div class="flex items-center justify-between text-xs font-semibold">
+                <span class="text-slate-400 font-mono">EDUCATIONAL LOGISTICS</span>
+                <a href="#contact" class="inline-flex items-center gap-1 text-navy-900 dark:text-gold-400 hover:underline">
+                  <span>Request Whitepaper</span>
+                  <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+
+              <!-- Two UI Buttons Side-by-Side: Live Demo & Source Code -->
+              <div class="grid grid-cols-2 gap-3 pt-2">
+                <a href="#" aria-label="Live Demo for ReliefOps" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 font-semibold text-xs shadow-sm hover:bg-navy-800 dark:hover:bg-gold-400 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all duration-200">
+                  <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" aria-label="Source Code for ReliefOps" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl border-2 border-slate-300 dark:border-navy-700 text-navy-900 dark:text-slate-200 font-semibold text-xs hover:border-navy-900 dark:hover:border-gold-400 hover:text-navy-900 dark:hover:text-gold-400 hover:bg-slate-100 dark:hover:bg-navy-800/50 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all duration-200">
+                  <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ===================================================================
+             INTERACTIVE RECRUITER VALUATION SHOWCASE: LIVE DCF SIMULATOR
+             =================================================================== -->
+        <div id="dcf-interactive" class="rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 p-6 lg:p-10 shadow-2xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left 6 cols: Description & Highlights -->
+            <div class="lg:col-span-6 space-y-6">
+              <div class="flex items-center gap-2">
+                <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-700 dark:text-gold-400 text-xs font-mono font-bold">
+                  LIVE INTERACTIVE RECUTER WIDGET
+                </span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-mono">DCF Valuation Model Preview</span>
+              </div>
+
+              <h3 class="font-display font-bold text-2xl sm:text-3xl text-navy-900 dark:text-white">
+                Interactive DCF Sensitivity & WACC Simulator
+              </h3>
+
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                Test the underlying mathematical engine of Sahil Akhtar’s <strong class="text-navy-900 dark:text-white">DCF Valuation Model</strong> right in your browser. Adjust WACC, Revenue Growth, and Terminal Growth parameters to observe instant enterprise and equity valuation sensitivity.
+              </p>
+
+              <!-- Methodology Highlights -->
+              <div class="grid grid-cols-2 gap-4 pt-2">
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-navy-800 border border-slate-200 dark:border-navy-700">
+                  <div class="text-xs font-mono text-slate-500 dark:text-slate-400">BASE WACC</div>
+                  <div class="font-display font-bold text-lg text-navy-900 dark:text-white">9.50%</div>
+                  <div class="text-[11px] text-emerald-600 dark:text-emerald-400">CAPM & Peer Beta Adjusted</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-navy-800 border border-slate-200 dark:border-navy-700">
+                  <div class="text-xs font-mono text-slate-500 dark:text-slate-400">BASE EBITDA MARGIN</div>
+                  <div class="font-display font-bold text-lg text-navy-900 dark:text-white">28.4%</div>
+                  <div class="text-[11px] text-gold-600 dark:text-gold-400">+420 bps Expansion</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-navy-900 text-white dark:bg-navy-800">Python / Streamlit</span>
+                <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-navy-900 text-white dark:bg-navy-800">CAPM WACC Engine</span>
+                <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-navy-900 text-white dark:bg-navy-800">M&A Due Diligence</span>
+              </div>
+            </div>
+
+            <!-- Right 6 cols: LIVE INTERACTIVE DCF WIDGET -->
+            <div class="lg:col-span-6 p-6 rounded-2xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 shadow-lg space-y-6">
+              <div class="flex items-center justify-between border-b border-slate-200 dark:border-navy-800 pb-4">
+                <div>
+                  <h4 class="font-display font-bold text-base text-navy-900 dark:text-white">Live DCF Simulation Engine</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">Adjust parameters to simulate real-time valuation sensitivity</p>
+                </div>
+                <button onclick="resetDCF()" class="text-xs font-mono text-gold-600 dark:text-gold-400 hover:underline">Reset Base Case</button>
+              </div>
+
+              <!-- Sliders -->
+              <div class="space-y-4">
+                <!-- Revenue Growth Slider -->
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span class="text-slate-700 dark:text-slate-300">Projected 5-Yr Revenue Growth (%)</span>
+                    <span id="valGrowth" class="font-mono text-gold-600 dark:text-gold-400 font-bold">14.0%</span>
+                  </div>
+                  <input type="range" id="sliderGrowth" min="5" max="25" step="0.5" value="14.0" oninput="calculateDCF()" />
+                </div>
+
+                <!-- WACC Slider -->
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span class="text-slate-700 dark:text-slate-300">Weighted Average Cost of Capital (WACC %)</span>
+                    <span id="valWacc" class="font-mono text-gold-600 dark:text-gold-400 font-bold">9.5%</span>
+                  </div>
+                  <input type="range" id="sliderWacc" min="7" max="14" step="0.25" value="9.5" oninput="calculateDCF()" />
+                </div>
+
+                <!-- Terminal Growth Rate -->
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span class="text-slate-700 dark:text-slate-300">Terminal Perpetual Growth Rate (%)</span>
+                    <span id="valTerm" class="font-mono text-gold-600 dark:text-gold-400 font-bold">2.5%</span>
+                  </div>
+                  <input type="range" id="sliderTerm" min="1.5" max="4.0" step="0.1" value="2.5" oninput="calculateDCF()" />
+                </div>
+              </div>
+
+              <!-- Output Panel -->
+              <div class="p-5 rounded-xl bg-navy-900 dark:bg-navy-900/90 text-white border border-navy-700 grid grid-cols-2 gap-4">
+                <div>
+                  <div class="text-[11px] font-mono text-gold-400 uppercase tracking-wider">Implied Enterprise Value</div>
+                  <div id="outEV" class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-1">$142.8M</div>
+                  <div id="outEVDelta" class="text-[11px] text-emerald-400 mt-0.5">Base Case Benchmark</div>
+                </div>
+                <div>
+                  <div class="text-[11px] font-mono text-gold-400 uppercase tracking-wider">Implied Share Price</div>
+                  <div id="outShare" class="font-display font-extrabold text-2xl sm:text-3xl text-emerald-400 mt-1">$28.56</div>
+                  <div class="text-[11px] text-slate-300 mt-0.5">Based on 5.0M Diluted Shares</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         COMPETENCY PILLARS & SKILLS MATRIX
+         ========================================================================= -->
+    <section id="competencies" class="py-16 bg-white dark:bg-navy-950 border-b border-slate-200/80 dark:border-navy-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="font-display font-bold text-2xl sm:text-3xl text-navy-900 dark:text-white">
+            Core Financial Competencies & Technical Arsenal
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+            Structured across FP&A, Accounting Systems, Quantitative Valuation, and Behavioral Decision Analysis.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Pillar 1 -->
+          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-navy-900/10 dark:bg-gold-500/15 text-navy-900 dark:text-gold-400 flex items-center justify-center mb-4 font-bold">
+              <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-display font-bold text-base text-navy-900 dark:text-white">FP&A & Variance Analysis</h4>
+            <ul class="mt-3 space-y-2 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Rolling 3-Statement Forecasts</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Budget vs. Actual Variance Audits</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>KPI & Executive Dashboarding</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Zero-Based Capital Budgeting</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-navy-900/10 dark:bg-gold-500/15 text-navy-900 dark:text-gold-400 flex items-center justify-center mb-4 font-bold">
+              <i data-lucide="calculator" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-display font-bold text-base text-navy-900 dark:text-white">Corporate Valuation</h4>
+            <ul class="mt-3 space-y-2 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>DCF Enterprise & Equity Valuation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Comparable Company Analysis</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>WACC & Beta Sensitivity Testing</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>M&A Accretion / Dilution Modeling</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-navy-900/10 dark:bg-gold-500/15 text-navy-900 dark:text-gold-400 flex items-center justify-center mb-4 font-bold">
+              <i data-lucide="pie-chart" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-display font-bold text-base text-navy-900 dark:text-white">AP / AR & Accounting Operations</h4>
+            <ul class="mt-3 space-y-2 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Accounts Payable Cycle Optimization</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Accounts Receivable & DSO Controls</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Month-End Close & Reconciliation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Working Capital & Cash Flow Management</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-navy-900/10 dark:bg-gold-500/15 text-navy-900 dark:text-gold-400 flex items-center justify-center mb-4 font-bold">
+              <i data-lucide="scale" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-display font-bold text-base text-navy-900 dark:text-white">Behavioral Finance & Systems</h4>
+            <ul class="mt-3 space-y-2 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Overconfidence & Anchoring Bias Audit</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Investor & Executive Decision Modeling</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Advanced Excel, PowerBI, SQL & ERP</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                <span>Cross-Functional Stakeholder Counseling</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACT SECTION: SCHEDULE CONSULTATION & EXECUTIVE INQUIRY
+         ========================================================================= -->
+    <section id="contact" class="py-20 lg:py-28 bg-slate-100/60 dark:bg-navy-900/50 border-t border-slate-200/80 dark:border-navy-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left 5 cols: Direct Contact Info & Executive Proposition -->
+          <div class="lg:col-span-5 space-y-8">
+            <div>
+              <span class="text-xs font-mono font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-navy-900/10 dark:bg-gold-500/10 text-navy-900 dark:text-gold-400">
+                Let's Connect
+              </span>
+              <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-navy-900 dark:text-white">
+                Initiate a Conversation with Sahil Akhtar
+              </h2>
+              <p class="mt-4 text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                Whether seeking an accomplished Financial Analyst to drive corporate valuation, streamline AP/AR accounting operations, or bring behavioral rigor to strategic FP&A, reach out below.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <!-- Email Card -->
+              <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
+                <div class="w-12 h-12 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 flex items-center justify-center font-bold shrink-0">
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-slate-500 dark:text-slate-400">DIRECT EXECUTIVE EMAIL</div>
+                  <a href="mailto:sahil.akhtar@finance-advisory.pro" class="font-semibold text-navy-900 dark:text-white hover:text-gold-600 dark:hover:text-gold-400 transition-colors">
+                    sahil.akhtar@finance-advisory.pro
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location / Mode Card -->
+              <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
+                <div class="w-12 h-12 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 flex items-center justify-center font-bold shrink-0">
+                  <i data-lucide="globe" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-slate-500 dark:text-slate-400">ENGAGEMENT MODEL</div>
+                  <div class="font-semibold text-navy-900 dark:text-white">
+                    Full-Time Corporate / Advisory / Strategic FP&A
+                  </div>
+                </div>
+              </div>
+
+              <!-- LinkedIn & Network Card -->
+              <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
+                <div class="w-12 h-12 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 flex items-center justify-center font-bold shrink-0">
+                  <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-slate-500 dark:text-slate-400">PROFESSIONAL NETWORK</div>
+                  <a href="#hero" class="font-semibold text-navy-900 dark:text-white hover:text-gold-600 dark:hover:text-gold-400 transition-colors">
+                    linkedin.com/in/sahil-akhtar-fpa
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right 7 cols: Interactive Consultation Inquiry Form -->
+          <div class="lg:col-span-7">
+            <div class="p-8 sm:p-10 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-2xl relative">
+              
+              <h3 class="font-display font-bold text-2xl text-navy-900 dark:text-white mb-2">Send an Executive Inquiry</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Receive a tailored response and valuation portfolio review within 24 hours.</p>
+
+              <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">Full Name *</label>
+                    <input type="text" required placeholder="Dr. / Mr. / Ms. Name" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-700 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 text-navy-900 dark:text-white transition-all" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">Work Email *</label>
+                    <input type="email" required placeholder="executive@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-700 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 text-navy-900 dark:text-white transition-all" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">Inquiry Type</label>
+                    <select class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-700 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 text-navy-900 dark:text-white transition-all">
+                      <option>Corporate FP&A / Strategic Hire</option>
+                      <option>Valuation & Financial Modeling Engagement</option>
+                      <option>Accounts Payable / Accounts Receivable Consultation</option>
+                      <option>Behavioral Finance / M&A Advisory</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">Organization / Firm</label>
+                    <input type="text" placeholder="Company Name" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-700 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 text-navy-900 dark:text-white transition-all" />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">Project Scope / Message *</label>
+                  <textarea rows="4" required placeholder="Outline key FP&A objectives, accounting operations, or strategic corporate valuation needs..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-700 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 text-navy-900 dark:text-white transition-all"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-navy-900 dark:bg-gold-500 text-white dark:text-navy-950 font-bold text-base shadow-lg hover:bg-navy-800 dark:hover:bg-gold-400 transition-all duration-200 flex items-center justify-center gap-2">
+                  <span>Send Executive Communication</span>
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+
+                <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-sm text-center font-semibold">
+                  ✓ Message transmitted securely. Sahil Akhtar will review your inquiry shortly.
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER SECTION
+       ========================================================================= -->
+  <footer class="bg-white dark:bg-navy-950 border-t border-slate-200 dark:border-navy-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-navy-900 dark:bg-gold-500 flex items-center justify-center font-display font-bold text-white dark:text-navy-950 text-sm">
+          SA
+        </div>
+        <div class="text-sm font-semibold text-navy-900 dark:text-white">
+          Sahil Akhtar • <span class="text-slate-500 dark:text-slate-400 font-normal">FP&A, Corporate Valuation & Behavioral Finance</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6 text-sm text-slate-500 dark:text-slate-400">
+        <a href="#about" class="hover:text-gold-500 transition-colors">About</a>
+        <a href="#competencies" class="hover:text-gold-500 transition-colors">Competencies</a>
+        <a href="#projects" class="hover:text-gold-500 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-gold-500 transition-colors">Contact</a>
+      </div>
+
+      <div class="text-xs text-slate-400 dark:text-slate-500">
+        © 2026 Sahil Akhtar. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       INTERACTIVE JAVASCRIPT & LOGIC
+       ========================================================================= -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Theme Switcher Logic
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const htmlElement = document.documentElement;
+
+    // Check system or saved preference
+    if (localStorage.getItem('theme') === 'light') {
+      htmlElement.classList.remove('dark');
+    } else {
+      // Default to crisp dark corporate mode unless light saved
+      htmlElement.classList.add('dark');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      if (htmlElement.classList.contains('dark')) {
+        htmlElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        htmlElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+      lucide.createIcons();
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on clicking any link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // =========================================================================
+    // INTERACTIVE DCF SIMULATION ENGINE
+    // =========================================================================
+    function calculateDCF() {
+      const g = parseFloat(document.getElementById('sliderGrowth').value) / 100; // e.g. 14.0%
+      const wacc = parseFloat(document.getElementById('sliderWacc').value) / 100; // e.g. 9.5%
+      const term = parseFloat(document.getElementById('sliderTerm').value) / 100; // e.g. 2.5%
+
+      // Display selected slider values
+      document.getElementById('valGrowth').textContent = (g * 100).toFixed(1) + '%';
+      document.getElementById('valWacc').textContent = (wacc * 100).toFixed(2) + '%';
+      document.getElementById('valTerm').textContent = (term * 100).toFixed(1) + '%';
+
+      // Base metrics simulation
+      const baseYear0FCF = 8.5; // $8.5M Year 0 Free Cash Flow
+      let totalPV = 0;
+      let currentFCF = baseYear0FCF;
+
+      // 5-Year Explicit Forecast PV
+      for (let t = 1; t <= 5; t++) {
+        currentFCF = currentFCF * (1 + g);
+        const discountFactor = Math.pow(1 + wacc, t);
+        totalPV += (currentFCF / discountFactor);
+      }
+
+      // Terminal Value Calculation (Gordon Growth Model)
+      // Guard against wacc <= term
+      let effectiveWacc = Math.max(wacc, term + 0.015);
+      const year5FCF = currentFCF;
+      const terminalValue = (year5FCF * (1 + term)) / (effectiveWacc - term);
+      const pvTerminalValue = terminalValue / Math.pow(1 + effectiveWacc, 5);
+
+      // Implied Enterprise Value ($M)
+      const enterpriseValue = totalPV + pvTerminalValue;
+
+      // Update UI
+      const evElem = document.getElementById('outEV');
+      const shareElem = document.getElementById('outShare');
+      const deltaElem = document.getElementById('outEVDelta');
+
+      const evFormatted = '$' + enterpriseValue.toFixed(1) + 'M';
+      evElem.textContent = evFormatted;
+
+      // Implied Share Price assuming 5.0M shares
+      const sharePrice = enterpriseValue / 5.0;
+      shareElem.textContent = '$' + sharePrice.toFixed(2);
+
+      // Compare against baseline $142.8M
+      const baseBenchmark = 142.8;
+      const diffPct = ((enterpriseValue - baseBenchmark) / baseBenchmark) * 100;
+      if (Math.abs(diffPct) < 1) {
+        deltaElem.textContent = 'Base Case Benchmark';
+        deltaElem.className = 'text-[11px] text-emerald-400 mt-0.5';
+      } else if (diffPct > 0) {
+        deltaElem.textContent = '+' + diffPct.toFixed(1) + '% vs Base Case';
+        deltaElem.className = 'text-[11px] text-emerald-400 mt-0.5 font-semibold';
+      } else {
+        deltaElem.textContent = diffPct.toFixed(1) + '% vs Base Case';
+        deltaElem.className = 'text-[11px] text-gold-400 mt-0.5 font-semibold';
+      }
+    }
+
+    function resetDCF() {
+      document.getElementById('sliderGrowth').value = 14.0;
+      document.getElementById('sliderWacc').value = 9.5;
+      document.getElementById('sliderTerm').value = 2.5;
+      calculateDCF();
+    }
+
+    // Run initial calculation on page load
+    calculateDCF();
+
+    // =========================================================================
+    // CONTACT FORM SUBMISSION LOGIC
+    // =========================================================================
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const submitBtn = document.getElementById('submitBtn');
+      const formSuccessMessage = document.getElementById('formSuccessMessage');
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Transmitting...</span>';
+
+      setTimeout(() => {
+        submitBtn.classList.add('hidden');
+        formSuccessMessage.classList.remove('hidden');
+      }, 700);
+    }
+  </script>
+</body>
+</html>
